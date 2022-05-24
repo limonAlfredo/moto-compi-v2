@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+  <!-- Estilo CSS -->
+  <link rel="stylesheet" href="/css/estilos.css">
+
+  <title>{{title}}</title>
+  <nav class="navbar navbar-expand-lg navbar-dark nav-deg">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img class="logotipo" src="/img/logo.png" alt="" srcset="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Bicicletas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="BiciRefa">Refacciones</a></li>
+              <li><a class="dropdown-item" href="BiciAcc">Accesorios</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="BiciMod">Modelos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Motocicletas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="MotoRefa">Refacciones</a></li>
+              <li><a class="dropdown-item" href="MotoAcces">Accesorios</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="conozcanos">Contacto</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link active" href="admin">Admin</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</head>
+
+<body>
+
+
+  {{{body}}}
+
+  <footer class="text-center text-black redes">
+
+    <!-- Grid container -->
+    <div class="container p-1">
+
+
+      <section>
+        <p class="pt-2 text-uppercase">
+          <strong>Síguenos en nuestras redes sociales</strong>
+        </p>
+      </section>
+
+      <!-- Section: Social media -->
+      <section class="mb-1">
+
+        <a class="btn btn-outline-light btn-floating m-1 zoom" href="#!" role="button">
+          <img class="icon-redes" src="/img/icons/facebook.png" alt="">
+        </a>
+
+        <a class="btn btn-outline-light btn-floating m-1 zoom" href="#!" role="button">
+          <img class="icon-redes" src="/img/icons/instagram.png" alt="">
+        </a>
+
+        <a class="btn btn-outline-light btn-floating m-1 zoom" href="#!" role="button">
+          <img class="icon-redes" src="/img/icons/whatsapp.png" alt="">
+        </a>
+
+      </section>
+    </div>
+
+    <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.1);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="/">MOTOPARTES EL GAVI</a>
+    </div>
+
+  </footer>
+  <!-- Footer -->
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

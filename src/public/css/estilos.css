@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+.logotipo {
+    width: 150px;
+}
+
+.navbar-dark {
+    background: rgb(7, 182, 144);
+}
+
+.nav-item {
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 10px 30px;
+    font-family: "Jazz LET", fantasy;
+}
+
+.icon-redes {
+    width: 40px;
+    margin: 0px 15px;
+}
+
+.redes {
+    background: linear-gradient(180deg, rgb(243, 106, 38), rgb(171, 46, 11));
+    /*background: linear-gradient(90deg, rgb(241, 101, 63), rgba(172, 29, 29, 0.721) , rgb(241, 101, 63));*/
+}
+
+.nav-deg {
+    background: linear-gradient(180deg, rgba(144, 34, 4, 0.839), rgb(243, 106, 38));
+    /*background: linear-gradient(90deg, rgb(4, 181, 181), rgb(20%, 40%, 60%) );*/
+    /*background: linear-gradient(45deg, rgba(35, 190, 157, 0.864), rgba(165, 50, 4, 0.682));*/
+}
+
+.zoom {
+    transition: 1.5s ease;
+    -moz-transition: 1.5s ease;
+    /* Firefox */
+    -webkit-transition: 1.5s ease;
+    /* Chrome - Safari */
+    -o-transition: 1.5s ease;
+    /* Opera */
+}
+
+.zoom:hover {
+    transform: scale(1);
+    -moz-transform: scale(1.1);
+    /* Firefox */
+    -webkit-transform: scale(1.1);
+    /* Chrome - Safari */
+    -o-transform: scale(1.1);
+    /* Opera */
+    -ms-transform: scale(1.1);
+    /* IE9 */
+}
+
+.menu a:hover,
+.menu a:active {
+    background-color: rgb(243, 106, 38);
+}
+
+.controles {
+    background: rgba(182, 100, 7, 0.545);
+    width: 5%;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.titulo {
+    color: red;
+    font-size: large;
+}
+
+.principal {
+    background-color: aqua;
+}
+
+#map {
+    height: 300px;
+}
