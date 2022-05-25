@@ -12,7 +12,7 @@ const productoSchema = new mongoose.Schema(
         descripcion:{
             type: String,
             required: "Capture una descripción",
-            minlength: [1, "La longitud minima del nombre debe de ser de un caracter."]   
+            minlength: [1, "La longitud minima del nombre debe de ser de un caracter."]
         },
         categoria:{
             type: String,
@@ -26,7 +26,7 @@ const productoSchema = new mongoose.Schema(
         proveedor:{
             type: String,
             required: "Seleccione un proveedor",
-            minlength: [1, "La longitud minima del proveedor debe de ser de un caracter."]
+            minlength: [1, "La longitud minima del proveedor debe de ser de un caracter."],
         }
     },
     {
