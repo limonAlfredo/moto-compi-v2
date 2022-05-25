@@ -10,7 +10,6 @@ const {
     renderMotoAc
 } = require('../controllers/index.controller');
 router.get('/',renderHome);
-
 router.get('/biciRefa',renderBiciRefa);
 router.get('/biciAcc',renderAcc);
 router.get('/biciMod',renderMod);
