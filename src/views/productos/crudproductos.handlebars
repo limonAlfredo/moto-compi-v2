@@ -51,11 +51,13 @@
                         <label for="descripcion">Descripcion</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <select class="form-control" id="proveedor" name="proveedor">
-                            <option value="" for="proveedor">Seleccione uno</option>
-                            {{#each proveedores}}
-                            <option value="{{nombre}}">{{nombre}}</option>
-                            {{/each}}
+                        <select class="form-control" id="categoria" name="categoria">
+                            <option value="">Seleccione uno</option>
+                            <option value="ACBici" selected>Accesorio para Bicicleta</option>
+                            <option value="RFBici" selected>Refacción para Bicicleta</option>
+                            <option value="MODBici" selected>Modelo de Bicicleta</option>
+                            <option value="ACMoto" selected>Accesorio para Motocicleta</option>
+                            <option value="RFMoto" selected>Refacción para Motocicleta</option>
                         </select>
                         <!--<input type="text" class="form-control" id="categoria" name="categoria">-->
                         <!--<label for="categoria">Categoria</label>-->
