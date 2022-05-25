@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const methodOverride = require('method-override');
 // INITIALIZATIONS
 const app = express();
 
@@ -15,13 +16,17 @@ app.set('view engine', 'handlebars');
 
 // MIDDLEWARES
 app.use(express.urlencoded({extended:false}));
+app.use(methodOverride('_method'));
+app.use((req, res, next) => {
+    next();
+});
 
 // ROUTES
 app.use(require('./routes/index.routes'));
 app.use(require('./routes/contacto.routes'));
 app.use(require('./routes/admin.routes'));
 app.use(require('./routes/verproductos.routes'));
-
+app.use(require('./routes/productos.routes'));
 // STATIC FILES
 app.use(express.static(path.join(__dirname,'public')));
 

@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Categoria</th>
+        <th>Proveedor</th>
+    </thead>
+    <tbody>
+        {{#each productos }}
+        <tr>
+            <td>{{nombre}}</td>
+            <td>{{descripcion}}</td>
+            <td>{{categoria}}</td>
+            <td>{{proveedor}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+    <tfoot>
+        <td></td>
+        <td></td>
+        <td>Total = X</td>
+    </tfoot>
+</table>    

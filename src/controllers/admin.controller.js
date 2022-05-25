@@ -1,5 +1,6 @@
 adminController = {};
 const adminSchema = require('../models/Administradores');
+const Producto = require('../models/Productos');
 
 //Iniciar Sesion
 adminController.renderEntrar = (req, res, next) => {
@@ -17,7 +18,17 @@ adminController.Entrar = async (req, res, next) => {
     else{
         const resultado = await adminEncontrado.matchPassword(password);
         if(resultado){
-            res.redirect('/homeAdmin');
+            await Producto.find({}).lean()
+        .then(productos => {
+            res.render('./productos/crudProductos', 
+            {
+                layout: 'adminmain',
+                productos: productos
+            });
+        })
+        .catch(err => {
+            res.status(400).redirect('/');
+        });
         }
         else{
             res.send("Correo electrónico y contraseña no validos.")
