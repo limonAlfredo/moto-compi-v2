@@ -1,0 +1,20 @@
+<form class="form-floating" action="/proveedores/edit/{{proveedors._id}}?_method=PUT" method="POST">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="nombre" name="nombre"
+            value={{ proveedors.nombre }}>
+        <label for="nombre">Nombre</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="descripcion" name="telefono"
+            value={{ proveedors.telefono }}>
+        <label for="descripcion">Telefono</label>
+    </div>
+    <div class="form-floating mb-3">
+        <button type="submit" class="btn btn-primary">
+            Guardar
+        </button>
+        <a href="/proveedores/" class="btn btn-secondary">
+            Cancelar
+        </a>
+    </div>
+</form>

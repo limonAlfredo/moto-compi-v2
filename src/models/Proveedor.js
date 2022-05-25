@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
-const ProveedorSchema = new mongoose.Schema(
+const proveedorSchema = new mongoose.Schema(
     {
-        Nombre_Proveedor:{
+        nombre:{
             type: String,
             required: "Capture el nombre del proveedor",
             minlength: [1, "La longitud minima del nombre debe de ser de un caracter."],
             maxlength: [30, "La longitud máxima del nomrbe debe de ser menor a 30 caracteres."]
         },
-        Telefono:{
+        telefono:{
             type: Number,
             required: "Capture un número de teléfono",
             unique: true
@@ -19,4 +19,4 @@ const ProveedorSchema = new mongoose.Schema(
     }
 );
 
-module.exports = mongoose.model('Proveedor', ProveedorSchema);
+module.exports = mongoose.model('Proveedor',proveedorSchema);
