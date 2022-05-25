@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+let posibles_valores_categoria = ["ACBici","ACMoto", "RFBici", "RFMoto" , "MODBici"];
 
 const productoSchema = new mongoose.Schema(
     {
@@ -16,8 +17,11 @@ const productoSchema = new mongoose.Schema(
         categoria:{
             type: String,
             required: "Seleccione una categoria",
-            minlength: [1, "La longitud minima del proveedor debe de ser de un caracter."]
-
+            minlength: [1, "La longitud minima del proveedor debe de ser de un caracter."],
+            enum: {
+                values: posibles_valores_categoria,
+                message: "Opción no válida ingrese una categoria válida."
+            }
         },
         proveedor:{
             type: String,
